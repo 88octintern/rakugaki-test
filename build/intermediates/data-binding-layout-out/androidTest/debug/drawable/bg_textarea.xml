@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <gradient android:angle="90"
+            android:endColor="@color/white"
+            android:startColor="@color/white"
+            android:type="linear" />
+        <stroke android:width="@dimen/form_border_width"
+            android:color="@color/gray300" />
+        <corners android:radius="@dimen/form_border_radius" />
+        <padding android:bottom="@dimen/form_textarea_padding"
+            android:left="@dimen/form_textarea_padding"
+            android:right="@dimen/form_textarea_padding"
+            android:top="@dimen/form_textarea_padding" />
+    </shape>
+</item>
+</selector>

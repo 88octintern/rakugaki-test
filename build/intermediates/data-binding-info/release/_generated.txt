@@ -1,0 +1,3 @@
+android.databinding.DataBindingComponent
+com.example.rakugaki.databinding.FragmentRakugakiPhotoBinding
+com.example.rakugaki.databinding.ActivityRakugakiPhotoBinding

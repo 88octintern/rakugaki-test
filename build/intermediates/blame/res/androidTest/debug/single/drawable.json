@@ -1,0 +1,318 @@
+[
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/border_radius_4dp_gray.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/border_radius_4dp_gray.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/__picker_bg_material_item.xml",
+        "source": "/Users/88oct/.android/build-cache/3026f0c81d61826fc3f82de562ddd9b25daf9536/output/res/drawable/__picker_bg_material_item.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/circle_hover.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/circle_hover.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/bg_spinner.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/bg_spinner.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/red_border_4dp.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/red_border_4dp.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/__picker_delete.xml",
+        "source": "/Users/88oct/.android/build-cache/3026f0c81d61826fc3f82de562ddd9b25daf9536/output/res/drawable/__picker_delete.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/button_star_toggle.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/button_star_toggle.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/radius_5.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/radius_5.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_vector_test.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/border_radius_4dp.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/border_radius_4dp.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/border_radius_24dp_red_back_red.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/border_radius_24dp_red_back_red.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/search_state_btn.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/search_state_btn.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/card.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/card.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/white_border_radius.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/white_border_radius.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/radius_2_non_border.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/radius_2_non_border.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/border_radius_2dp_gray_back_white.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/border_radius_2dp_gray_back_white.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/__picker_camera.xml",
+        "source": "/Users/88oct/.android/build-cache/3026f0c81d61826fc3f82de562ddd9b25daf9536/output/res/drawable/__picker_camera.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/border_radius_4dp_red.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/border_radius_4dp_red.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/fab_label_background.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/fab_label_background.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/calendar_gray_dot.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/calendar_gray_dot.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/notification_bg.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/design_password_eye.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/drawable/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/border_radius_3dp_red_back_red.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/border_radius_3dp_red_back_red.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/calendar_blue_dot.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/calendar_blue_dot.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/__picker_photo_bg.xml",
+        "source": "/Users/88oct/.android/build-cache/3026f0c81d61826fc3f82de562ddd9b25daf9536/output/res/drawable/__picker_photo_bg.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/bg_textarea.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/bg_textarea.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/chat_divider.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/chat_divider.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/chat_message_divider.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/chat_message_divider.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/calendar_selected_dot.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/calendar_selected_dot.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/radius_2_non_border_gray_leftside.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/radius_2_non_border_gray_leftside.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/white_border_circle.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/white_border_circle.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/circle.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/circle.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/notification_divider.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/notification_divider.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/loading_progress_frame.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/loading_progress_frame.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/list_selector.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/list_selector.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/red_circle.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/red_circle.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/design_fab_background.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/shadow_above.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/shadow_above.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/radius_2_non_border_blue_leftside.xml",
+        "source": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/bundles/debug/res/drawable/radius_2_non_border_blue_leftside.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/drawable/__picker_checkbox_bg.xml",
+        "source": "/Users/88oct/.android/build-cache/3026f0c81d61826fc3f82de562ddd9b25daf9536/output/res/drawable/__picker_checkbox_bg.xml"
+    }
+]

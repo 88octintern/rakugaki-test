@@ -1,0 +1,248 @@
+
+                                                        
+
+    
+
+                                           
+
+                 
+                            
+                                                             
+
+                 
+                           
+                                                                
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/fragment_rakugaki_photo_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black222"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/image_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:backgroundTint="@color/white"
+                            android:tag="binding_1"                  
+                            app:srcCompat="@drawable/__picker_photo_bg" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="binding_2"                                                        >
+
+            <!--ベースのメニュー-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="binding_3"                         >
+
+                <ImageButton
+                    android:id="@+id/pentable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:backgroundTint="@color/white"
+                    android:tag="binding_4"                        
+                    android:paddingLeft="@dimen/space_16dp"
+                    android:paddingRight="@dimen/space_16dp"
+                    android:src="@drawable/icon_common_grey_pen" />
+
+                <ImageButton
+                    android:id="@+id/charactable_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/pentable"
+                    android:background="@null"
+                    android:backgroundTint="@color/white"
+                    android:tag="binding_5"                           
+                    android:paddingLeft="@dimen/space_16dp"
+                    android:paddingRight="@dimen/space_16dp"
+                    android:src="@drawable/icon_common_grey_font" />
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/space_8dp"
+                    android:layout_marginRight="@dimen/space_8dp"
+                    android:layout_marginTop="@dimen/space_8dp"
+                    android:background="@drawable/border_radius_24dp_red_back_red"
+                    android:tag="binding_6"                        
+                    android:paddingLeft="@dimen/space_16dp"
+                    android:paddingRight="@dimen/space_16dp"
+                    android:text="保存"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="binding_7"                                              >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:tag="binding_8"                      
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/space_24dp"
+                    android:paddingRight="@dimen/space_24dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/icon_common_grey_return" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取消"
+                        android:textColor="@color/gray888"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--ベースのメニュー-->
+            <RelativeLayout
+                android:layout_width="@dimen/space_24dp"
+                android:layout_height="wrap_content"
+                android:tag="binding_9"                                                 />
+
+            <LinearLayout
+                android:id="@+id/color_palette"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="binding_10"                                               >
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/space_24dp"
+                    android:tag="binding_11"                                                                                    
+                                                                       />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/space_24dp"
+                    android:tag="binding_12"                                                                                       
+                                                                        />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/space_24dp"
+                    android:tag="binding_13"                                                                                          
+                                                                         />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:tag="binding_14"                                                                                          
+                                                                         />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:tag="binding_15"                                                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:tag="binding_16"                          
+                    android:paddingLeft="@dimen/space_16dp"
+                    android:paddingRight="@dimen/space_16dp"
+                    android:src="@drawable/icon_free_draw" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:tag="binding_17"                                                      >
+
+            <LinearLayout
+                android:id="@+id/delete_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/delete_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/white_border_circle"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_common_white_delete" />
+
+                <TextView
+                    android:id="@+id/delete_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8dp"
+                    android:text="ここにドラッグして削除"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+         

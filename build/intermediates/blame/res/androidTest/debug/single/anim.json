@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/88oct/.android/build-cache/4f8929892e25453e2a0f1f3e6fb08c2ef4414a85/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_in.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_out.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/88oct/src/andpad-chat-android/rakugaki/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/88oct/.android/build-cache/4e8766bd67b7769ee6127191c60e98a1709bbded/output/res/anim/abc_slide_in_top.xml"
+    }
+]
