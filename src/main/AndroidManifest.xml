@@ -2,5 +2,8 @@
 
     package="com.example.rakugaki">
 
+    <application android:allowBackup="true" android:supportsRtl="true">
+        <activity android:name=".RakugakiPhotoActivity"></activity>
+    </application>
 
 </manifest>

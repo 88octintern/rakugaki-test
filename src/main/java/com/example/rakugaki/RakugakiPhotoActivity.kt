@@ -6,6 +6,7 @@ import android.databinding.DataBindingUtil
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
+import android.view.MenuItem
 import android.view.View
 import com.example.rakugaki.databinding.ActivityRakugakiPhotoBinding
 
@@ -33,6 +34,13 @@ class RakugakiPhotoActivity : BaseActivity() {
         } else {
             fragment = supportFragmentManager.findFragmentById(R.id.content_view) as RakugakiPhotoFragment
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.getItemId()) {
+            android.R.id.home -> finish()
+        }
+        return true
     }
 
     fun onClickDone(view: View) {
