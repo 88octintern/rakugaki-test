@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#FF5959</color>
+    <color name="bp_red">#FF5959</color>
+    <color name="selected_red">#FFBBBB</color>
+    <color name="bp_red_dark">#B33636</color>
+    <color name="bp_yellow">#FFC15C</color>
+    <color name="bp_black500">#333333</color>
+    <color name="bp_black400">#222222</color>
+    <color name="dg_calendar">#F5F5F5</color>
+
+    <color name="accent_color">#FF5959</color>
+
+    <color name="calendar_month">#FF5959</color>
+    <color name="calendar_selected">#FF5959</color>
+    <color name="calendar_border">#D8D8D8</color>
+    <color name="calendar_saturday">#4A90E2</color>
+    <color name="calendar_sunday">#F5322F</color>
+    <color name="calendar_normal">#222222</color>
+    <color name="calendar_dot_blue">#46A1DD</color>
+    <color name="calendar_dot_gray">#888888</color>
+
+    <color name="border_color">#D8D8D8</color>
+
+    <!-- Navigation -->
+    <color name="nav_background">@color/white</color>
+    <color name="nav_active">@color/main</color>
+    <color name="nav_inactive">@color/gray600</color>
+
+    <!-- Grayscales -->
+    <color name="gray50">#FAFAFA</color>
+    <color name="gray100">#F5F5F5</color>
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray300">#E0E0E0</color>
+    <color name="gray350">#DDDDDD</color>
+    <color name="gray400">#BDBDBD</color>
+    <color name="gray510">#9A9A9A</color>
+    <color name="gray500">#9E9E9E</color>
+    <color name="gray550">#888888</color>
+    <color name="gray600">#757575</color>
+    <color name="gray700">#616161</color>
+    <color name="gray800">#424242</color>
+    <color name="gray900">#212121</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--font color-->
+    <color name="black222">#222222</color>
+    <color name="gray888">#888888</color>
+    <color name="black2D">#2D2D2D</color>
+    <color name="grayEEE">#EEEEEE</color>
+    <color name="grayBBB">#BBBBBB</color>
+    <color name="gray666">#666666</color>
+    <color name="red">#ED4747</color>
+    <color name="redAlert">#F04542</color>
+
+
+    <color name="green">#5CA361</color>
+
+    <color name="blue">#558BDF</color>
+
+    <!--Normal text-->
+    <color name="normal_text">#222222</color>
+    <color name="light_text">#666666</color>
+    <color name="low_text">#888888</color>
+
+    <!-- Others -->
+    <color name="black_transparent_95">#F2000000</color>
+    <color name="black_transparent_90">#E6000000</color>
+    <color name="black_transparent_87">#DE000000</color>
+    <color name="black_transparent_85">#D9000000</color>
+    <color name="black_transparent_80">#CC000000</color>
+    <color name="black_transparent_75">#BF000000</color>
+    <color name="black_transparent_70">#B3000000</color>
+    <color name="black_transparent_65">#A6000000</color>
+    <color name="black_transparent_60">#99000000</color>
+    <color name="black_transparent_55">#8C000000</color>
+    <color name="black_transparent_54">#8A000000</color>
+    <color name="black_transparent_50">#80000000</color>
+    <color name="black_transparent_45">#73000000</color>
+    <color name="black_transparent_40">#66000000</color>
+    <color name="black_transparent_35">#59000000</color>
+    <color name="black_transparent_30">#4D000000</color>
+    <color name="black_transparent_26">#42000000</color>
+    <color name="black_transparent_25">#40000000</color>
+    <color name="black_transparent_20">#33000000</color>
+    <color name="black_transparent_15">#26000000</color>
+    <color name="black_transparent_12">#1F000000</color>
+    <color name="black_transparent_10">#1A000000</color>
+    <color name="black_transparent_5">#0D000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="background">#F5F5F5</color>
+
+
+    <!-- Toolbar-->
+    <color name="toolbar_background">@color/main</color>
+    <color name="toolbar_text">@color/white</color>
+    <color name="toolbar_sub_text">@color/white</color>
+</resources>

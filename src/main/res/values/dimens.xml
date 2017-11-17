@@ -1,0 +1,146 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="toolbar_elevation">3dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="drawer_width">320dp</dimen>
+    <dimen name="drawer_header_height">100dp</dimen>
+    <dimen name="drawer_header_padding">16dp</dimen>
+    <dimen name="drawer_logo_width">224dp</dimen>
+    <dimen name="drawer_usericon_width">60dp</dimen>
+    <dimen name="drawer_usericon_height">60dp</dimen>
+    <dimen name="drawer_usericon_margin">16dp</dimen>
+    <dimen name="drawer_usericon_border_width">1dp</dimen>
+    <dimen name="drawer_username_size">14sp</dimen>
+    <dimen name="drawer_useremail_size">12sp</dimen>
+    <dimen name="drawer_item_height">120dp</dimen>
+    <dimen name="drawer_badge_padding">5dp</dimen>
+    <dimen name="drawer_badge_radius">5dp</dimen>
+    <dimen name="status_bar_height">0dp</dimen>
+    <dimen name="fab_margin">8dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_pressedTranslationZ">12dp</dimen>
+
+    <!-- Component -->
+    <dimen name="bottom_nav_height">56dp</dimen>
+
+    <!-- Splash -->
+    <dimen name="splash_padding">80dp</dimen>
+
+    <!-- Walkthrough -->
+    <dimen name="walkthrough_btn_margin">20dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="middle_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="extra_large">96dp</dimen>
+
+    <dimen name="normal_padding">8dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_border">1dp</dimen>
+    <dimen name="card_padding">2dp</dimen>
+    <dimen name="card_radius">2dp</dimen>
+
+    <!-- Report -->
+    <dimen name="form_border_width">1dp</dimen>
+    <dimen name="form_border_radius">2dp</dimen>
+    <dimen name="form_textarea_padding">10dp</dimen>
+    <dimen name="spinner_padding">10dp</dimen>
+    <dimen name="spinner_margin">10dp</dimen>
+    <dimen name="spinner_divider_height">1dp</dimen>
+    <dimen name="order_margin">10dp</dimen>
+    <dimen name="order_padding">10dp</dimen>
+    <dimen name="order_name_size">16sp</dimen>
+    <dimen name="order_place_size">12sp</dimen>
+    <dimen name="order_thumbnail_height">80dp</dimen>
+    <dimen name="order_thumbnail_width">120dp</dimen>
+    <dimen name="report_spinner_padding">5dp</dimen>
+    <dimen name="report_spinner_text_size">16sp</dimen>
+    <dimen name="report_thumbnail_height">80dp</dimen>
+    <dimen name="report_thumbnail_width">80dp</dimen>
+    <dimen name="report_thumbnail_padding">5dp</dimen>
+    <dimen name="report_thumbnail_remove_button_height">24dp</dimen>
+    <dimen name="report_thumbnail_remove_button_width">24dp</dimen>
+    <dimen name="report_comment_box_margin">10dp</dimen>
+    <dimen name="textsize_note">10sp</dimen>
+
+    <!--Chat list-->
+    <dimen name="chat_list_thumbnail_height">40dp</dimen>
+    <dimen name="chat_list_thumbnail_width">40dp</dimen>
+    <dimen name="chat_list_title_size">14sp</dimen>
+    <dimen name="chat_list_size">12sp</dimen>
+
+    <!-- Chat -->
+    <dimen name="chat_thumbnail_height">40dp</dimen>
+    <dimen name="chat_thumbnail_width">40dp</dimen>
+
+    <dimen name="chat_message_acceptance_width">210dp</dimen>
+
+    <dimen name="chat_to_thumbnail_height">20dp</dimen>
+    <dimen name="chat_to_thumbnail_width">20dp</dimen>
+    <dimen name="chat_text_size">16sp</dimen>
+
+    <dimen name="chat_image_thumbnail_height">52dp</dimen>
+    <dimen name="chat_image_thumbnail_width">52dp</dimen>
+
+    <!-- notification -->
+    <dimen name="notification_list_body_size">15sp</dimen>
+    <dimen name="notification_list_time_size">11sp</dimen>
+
+    <!-- Member -->
+    <dimen name="member_list_thumbnail_height">40dp</dimen>
+    <dimen name="member_list_thumbnail_width">40dp</dimen>
+    <dimen name="member_list_title_size">16sp</dimen>
+    <dimen name="member_list_size">11sp</dimen>
+
+    <dimen name="document_width">240dp</dimen>
+
+    <dimen name="datetime_width">40dp</dimen>
+
+    <!-- Developer Tools -->
+    <dimen name="dev_title_size">20dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="height_30dp">30dp</dimen>
+
+    <dimen name="thumbnail_height_40dp">40dp</dimen>
+    <dimen name="thumbnail_width_40dp">40dp</dimen>
+
+    <!-- space -->
+    <dimen name="space_0dp">0dp</dimen>
+    <dimen name="space_2dp">2dp</dimen>
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_10dp">10dp</dimen>
+    <dimen name="space_12dp">12dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_24dp">24dp</dimen>
+    <dimen name="space_32dp">32dp</dimen>
+    <dimen name="space_40dp">40dp</dimen>
+    <dimen name="space_48dp">48dp</dimen>
+    <dimen name="space_56dp">56dp</dimen>
+    <dimen name="space_58dp">58dp</dimen>
+    <dimen name="space_60dp">60dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_8sp">8sp</dimen>
+    <dimen name="text_10sp">10sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_15sp">15sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_24sp">24sp</dimen>
+    <dimen name="text_drawable_12dp">12dp</dimen>
+
+    <!-- Line -->
+    <dimen name="line_1dp">1dp</dimen>
+    <dimen name="line_2dp">2dp</dimen>
+
+</resources>

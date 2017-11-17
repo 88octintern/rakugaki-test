@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/bp_red</item>
+        <item name="colorPrimaryDark">@color/bp_red_dark</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:textColorPrimary">@color/bp_black500</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:editTextBackground">@drawable/bg_textarea</item>
+        <item name="editTextBackground">@drawable/bg_textarea</item>
+        <item name="android:spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+        <item name="spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+        <item name="android:spinnerDropDownItemStyle">
+            @android:style/TextAppearance.Holo.Widget.DropDownItem
+        </item>
+        <item name="spinnerDropDownItemStyle">
+            @android:style/TextAppearance.Holo.Widget.DropDownItem
+        </item>
+    </style>
+
+    <style name="AppThemeMemberAdd" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/grayEEE</item>
+        <item name="colorPrimaryDark">@color/grayEEE</item>
+        <item name="colorAccent">@color/bp_yellow</item>
+        <item name="android:textColorPrimary">@color/bp_black500</item>
+        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:editTextBackground">@drawable/bg_textarea</item>
+        <item name="editTextBackground">@drawable/bg_textarea</item>
+        <item name="android:spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+        <item name="spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+        <item name="actionMenuTextColor">#000000</item>
+        <item name="android:spinnerDropDownItemStyle">
+            @android:style/TextAppearance.Holo.Widget.DropDownItem
+        </item>
+        <item name="spinnerDropDownItemStyle">
+            @android:style/TextAppearance.Holo.Widget.DropDownItem
+        </item>
+    </style>
+
+    <style name="ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/bp_red</item>
+    </style>
+
+    <style name="NavHeader" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:background">@color/bp_red</item>
+    </style>
+
+    <style name="Button">
+        <item name="colorButtonNormal">@color/bp_red</item>
+        <!--<item name="rippleColor">@color/gray500</item>-->
+        <item name="android:tint">@color/white</item>
+        <item name="backgroundTint">@color/bp_red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:background">@color/gray300</item>
+    </style>
+
+    <style name="chat_text_message_style">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="chat_timings">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="overlay">
+        <item name="android:background">@color/black_transparent_85</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SpinnerAsEditText" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>
