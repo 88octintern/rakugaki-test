@@ -2,6 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android'
 
+apply plugin: 'maven-publish'
+apply from: 'maven-push.gradle'
+
 repositories {
     mavenCentral()
 }
@@ -71,21 +74,4 @@ dependencies {
 
     compile "com.github.hotchemi:permissionsdispatcher:3.0.1"
     kapt 'com.github.hotchemi:permissionsdispatcher-processor:3.0.1'
-}
-def repo = new File(rootDir, "repository")
-
-apply plugin: 'maven'
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository url: "file://${repo.absolutePath}"
-            pom.version = '1.0.0'
-            pom.groupId = 'ANDPAD'
-            pom.artifactId = 'rakugaki'
-        }
-    }
-}
-repositories {
-    mavenCentral()
 }
