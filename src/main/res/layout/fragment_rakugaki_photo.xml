@@ -22,6 +22,7 @@
             android:id="@+id/scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:isScrollContainer="false"
             android:fillViewport="true">
 
             <RelativeLayout
@@ -37,16 +38,18 @@
 
                     <FrameLayout
                         android:id="@+id/container"
+                        android:clickable="true"
+                        android:onClick="@{fragment::onClickDone}"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical">
 
                         <ImageView
                             android:id="@+id/image_view"
+                            android:layout_gravity="center_horizontal|top"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
                             android:backgroundTint="@color/white"
+                            android:layout_height="300dp"
                             app:photoImageUrl="@{viewModel.imageUrl}"
                             app:srcCompat="@drawable/__picker_photo_bg" />
 
@@ -56,6 +59,7 @@
         </ScrollView>
 
         <LinearLayout
+            android:clickable="true"
             android:id="@+id/buttons"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -130,7 +134,7 @@
                     android:paddingLeft="@dimen/space_24dp"
                     android:paddingRight="@dimen/space_24dp">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@null"
@@ -154,6 +158,7 @@
                 android:visibility="@{viewModel.charactable ? View.VISIBLE : View.GONE}"/>
 
             <LinearLayout
+                android:clickable="false"
                 android:id="@+id/color_palette"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -190,22 +195,7 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="104dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:visibility="@{viewModel.charactable ? View.VISIBLE : View.GONE}">
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:onClick="@{viewModel::onClickCharactable}"
-                    android:paddingLeft="@dimen/space_16dp"
-                    android:paddingRight="@dimen/space_16dp"
-                    android:src="@drawable/icon_free_draw" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout

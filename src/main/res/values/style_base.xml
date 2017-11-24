@@ -170,6 +170,9 @@
     <!--<item name="android:textSize">@dimen/text_12sp</item>-->
     <!--<item name="fontPath">@string/font_noto_cjk_medium</item>-->
     <!--</style>-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/main</item>
+    </style>
 
 
     <!--&lt;!&ndash;==================== Card ====================&ndash;&gt;-->

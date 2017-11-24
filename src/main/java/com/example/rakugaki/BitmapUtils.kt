@@ -17,12 +17,17 @@ import java.io.IOException
  */
 object BitmapUtils {
 
-    fun getViewCapture(view: View, x: Int, y: Int, w: Int, h: Int): Bitmap {
-        view.setDrawingCacheEnabled(true)
-        val cache = view.getDrawingCache()
-        val screenShot = Bitmap.createBitmap(cache, x, y, w, h)
-        view.setDrawingCacheEnabled(false)
-        return screenShot
+    fun getViewCapture(view: View, x: Int, y: Int, w: Int, h: Int): Bitmap? {
+        try {
+            view.setDrawingCacheEnabled(true)
+            view.buildDrawingCache()
+            val cache = view.getDrawingCache()
+            val screenShot = Bitmap.createBitmap(cache, x, y, w, h)
+            view.setDrawingCacheEnabled(false)
+            return screenShot
+        }catch (e:Exception){
+            return null
+        }
     }
 
     fun save(context: Context, bitmap: Bitmap):String? {

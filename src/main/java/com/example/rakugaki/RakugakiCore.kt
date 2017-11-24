@@ -21,10 +21,11 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
 
     //追加されたviewを保持する
     private var views: MutableList<View> = mutableListOf()
-    //private var textViews: MutableList<TextCanvasView> = mutableListOf()
 
-    private var freehand: PhotoCanvasView? = null
-    private var freetext: TextCanvasView? = null
+    var freehand: PhotoCanvasView? = null
+    var freetext: TextCanvasView? = null
+
+    var isEnabled: Boolean = false
 
     fun isFreehandNull(): Boolean {
         if (freehand == null) {
@@ -46,6 +47,7 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
 
     //freehandを開始する
     fun freehandStart(): RakugakiCore {
+        if (!isEnabled) return this
         val base = baseView ?: return this
         val context = baseView?.context ?: return this
 
@@ -85,14 +87,14 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
     }
 
     fun freetextStart(): RakugakiCore {
+        if (!isEnabled) return this
         val base = baseView ?: return this
         val context = baseView?.context ?: return this
         freetext?.let { v ->
             base.removeView(v)
             freetext = null
         }
-        freetext = null
-        freetext = TextCanvasView.makeCanvas(context, PhotoEditCanvasType.EDIT, "", ContextCompat.getColor(context, R.color.red))
+        freetext = TextCanvasView.makeCanvas(context, PhotoEditCanvasType.EDIT, "", ContextCompat.getColor(context, R.color.red), base.width)
         var lp = FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT)
         lp.gravity = Gravity.CENTER_HORIZONTAL
         base.addView(freetext, lp)
@@ -102,30 +104,17 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
         return this
     }
 
-    fun resetAll() {
-        val base = baseView ?: return
-
-        if (views.isNotEmpty()) {
-            views.map {
-                base.removeView(it)
-            }
-            views.clear()
-        }
-        freehand = null
-        freetext = null
-    }
-
     fun removeLast() {
         val base = baseView ?: return
 
         if (views.isNotEmpty()) {
 
-            val v:View
-            if(!isFreehandNull()){
+            val v: View
+            if (!isFreehandNull()) {
                 v = views.filter { it is PhotoCanvasView }.last()
-            }else if (!isFreetextNull()){
+            } else if (!isFreetextNull()) {
                 v = views.filter { it is TextCanvasView }.last()
-            }else{
+            } else {
                 v = views.last()
             }
 
@@ -134,6 +123,22 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
         }
         freehand = null
         freetext = null
+    }
+
+    fun resumeText(view: View) {
+        val base = baseView ?: return
+
+        if (views.contains(view)) {
+            val index = views.indexOf(view)
+            val v = views.get(index)
+            views.remove(v)
+            base.removeView(v)
+            if (v is TextCanvasView) {
+                freetext = v
+                views.add(v)
+                base.addView(v)
+            }
+        }
     }
 
     fun remove(view: View) {
@@ -147,7 +152,7 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
         freetext = null
     }
 
-    fun freehandEnd():Boolean {
+    fun freehandEnd(): Boolean {
         val base = baseView ?: return false
         val v = freehand?.createNewMoveCanvas(base) ?: return false
         views.add(v)
@@ -168,21 +173,60 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
     fun freetextEnd() {
         val base = baseView ?: return
 
-        val v: TextCanvasView? = freetext?.createNewMoveCanvas(base)
-        if (v != null) {
-            views.add(v)
-        }
-        base.removeView(freetext)
-        freetext = null
+        freetext?.let { textView ->
+            //すでにviewが追加されているのか判定
+            if (views.contains(textView)) {
+                callback?.canSave()
+            } else {
+                val v: TextCanvasView? = textView.createNewMoveCanvas(base)
+                if (v != null) {
+                    views.add(v)
+                }
+                base.removeView(textView)
 
-        v?.viewTreeObserver?.let { observer ->
-            val listener = object : ViewTreeObserver.OnGlobalLayoutListener {
-                override fun onGlobalLayout() {
-                    callback?.canSave()
-                    observer.removeOnGlobalLayoutListener(this)
+                v?.viewTreeObserver?.let { observer ->
+                    val listener = object : ViewTreeObserver.OnGlobalLayoutListener {
+                        override fun onGlobalLayout() {
+                            callback?.canSave()
+                            observer.removeOnGlobalLayoutListener(this)
+                        }
+                    }
+                    observer.addOnGlobalLayoutListener(listener)
                 }
             }
-            observer.addOnGlobalLayoutListener(listener)
+            freetext = null
+        }
+
+    }
+
+    fun movable() {
+        views.map {
+            if (it is PhotoCanvasView) {
+                (it as PhotoCanvasView).canvasType = PhotoEditCanvasType.MOVE
+            }
+            if (it is TextCanvasView) {
+                (it as TextCanvasView).canvasType = PhotoEditCanvasType.MOVE
+                (it as TextCanvasView).movable()
+            }
+        }
+    }
+
+    fun fixedFreehand() {
+        views.map {
+            if (it is PhotoCanvasView) {
+                (it as PhotoCanvasView).canvasType = PhotoEditCanvasType.FIXED
+            }
+        }
+    }
+
+    fun fixed() {
+        views.map {
+            if (it is PhotoCanvasView) {
+                (it as PhotoCanvasView).canvasType = PhotoEditCanvasType.FIXED
+            }
+            if (it is TextCanvasView) {
+                (it as TextCanvasView).canvasType = PhotoEditCanvasType.FIXED
+            }
         }
     }
 
@@ -192,7 +236,7 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
 
         if (views.isNotEmpty()) {
             val v = views.filter { it is PhotoCanvasView }.last()
-            if(v is PhotoCanvasView) {
+            if (v is PhotoCanvasView) {
                 base.removeView(v)
                 views.removeAt(views.size - 1)
             }
@@ -205,26 +249,29 @@ class RakugakiCore constructor(private var baseView: FrameLayout? = null) {
         val base = baseView ?: return null
         val baseView = imageView
 
-        val bitmap = (imageView.drawable as BitmapDrawable).bitmap
-        val bgBitmap = BitmapUtils.getViewCapture(baseView, 0, 0, baseView.width, baseView.height)
-        val bgCanvas = Canvas(bgBitmap)
+        BitmapUtils.getViewCapture(baseView, 0, 0, baseView.width, baseView.height)?.let{ bgBitmap ->
+            val bgCanvas = Canvas(bgBitmap)
 
-        views.map {
-            val bitmap = BitmapUtils.getViewCapture(it, 0, 0, it.width, it.height)
-            bgCanvas.drawBitmap(bitmap, it.left.toFloat() - imageView.left.toFloat(), it.top.toFloat() - imageView.top.toFloat(), null)
+            views.map {
+                BitmapUtils.getViewCapture(it, 0, 0, it.width, it.height)?.let { bitmap ->
+                    bgCanvas.drawBitmap(bitmap, it.left.toFloat() - imageView.left.toFloat(), it.top.toFloat() - imageView.top.toFloat(), null)
+                }
+            }
+
+            val url = BitmapUtils.save(baseView.context, bgBitmap)
+
+            views.map {
+                base.removeView(it)
+            }
+            views.clear()
+
+            baseUrl = url
+
+            return url
         }
-
-        val url = BitmapUtils.save(baseView.context, bgBitmap)
-
-        views.map {
-            base.removeView(it)
-        }
-        views.clear()
-
-        baseUrl = url
-
-        return url
+        return null
     }
+
 
     interface Callback {
         fun canSave()

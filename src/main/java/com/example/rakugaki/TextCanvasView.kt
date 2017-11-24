@@ -1,17 +1,18 @@
 package com.example.rakugaki
 
 import android.content.Context
+import android.graphics.Canvas
 import android.graphics.Color
 import android.support.v4.content.ContextCompat
 import android.view.MotionEvent
+import android.view.ViewTreeObserver
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.FrameLayout
 import org.greenrobot.eventbus.EventBus
 
 /** 写真に書き込める文字列を扱うView */
-class TextCanvasView constructor(context: Context, var canvasType: PhotoEditCanvasType, val inputText: String?, var color: Int) : EditText(context) {
-
+class TextCanvasView constructor(context: Context, var canvasType: PhotoEditCanvasType, val inputText: String?, var color: Int, val parentWidth: Int) : EditText(context) {
     private var maxX: Float = Float.MIN_VALUE
     private var minX: Float = Float.MAX_VALUE
     private var maxY: Float = Float.MIN_VALUE
@@ -21,6 +22,8 @@ class TextCanvasView constructor(context: Context, var canvasType: PhotoEditCanv
 
     //複製可能の判定
     private var canCopy: Boolean = false
+
+    private var moved: Boolean = false
 
     private var size = 28.0f
 
@@ -77,39 +80,106 @@ class TextCanvasView constructor(context: Context, var canvasType: PhotoEditCanv
         this.setTextColor(color)
     }
 
-    override fun onTouchEvent(event: MotionEvent): Boolean {
-        if (canvasType == PhotoEditCanvasType.EDIT) {
-            super.onTouchEvent(event)
-            return true
-        } else if (canvasType == PhotoEditCanvasType.MOVE) {
-            val x = event.rawX.toInt()
-            val y = event.rawY.toInt()
-            when (event.action) {
-                MotionEvent.ACTION_MOVE -> {
-                    // 今回イベントでのView移動先の位置
-                    val left = this.left + (x - oldrawx)
-                    val top = this.top + (y - oldrawy)
-                    // Viewを移動する
-                    this.layout(left, top, left + this.width, top + this.height)
+    override fun onDraw(canvas: Canvas?) {
+        super.onDraw(canvas)
+    }
 
-                    EventBus.getDefault().post(RakugakiTapEvent(RakugakiTapEvent.RakugakiEvent.DRAGGING, this))
-                }
-                MotionEvent.ACTION_UP -> {
-                    val lp = FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT)
-                    lp.setMargins(this.left, this.top, 0, 0)
-                    this.setLayoutParams(lp)
+    fun movable() {
+        this.moved = true
+        this.isEnabled = false
+        this.isFocusable = false
+        this.isFocusableInTouchMode = false
+        this.setBackgroundColor(Color.TRANSPARENT)
+        this.setTextColor(color)
+        this.setTextSize(size)
+    }
 
-                    EventBus.getDefault().post(RakugakiTapEvent(RakugakiTapEvent.RakugakiEvent.RELEASED, this))
-                }
+    fun editable() {
+        this.isEnabled = true
+        this.isFocusable = true
+        this.isFocusableInTouchMode = true
+
+        this.setTextColor(color)
+        this.setTextSize(size)
+        this.setBackgroundColor(Color.TRANSPARENT)
+        this.setHint("テキストを入力してください。")
+        this.setOnFocusChangeListener { view, isFocused ->
+            if (!isFocused) {
+                // ソフトキーボードを非表示にする
+                val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS)
             }
-            // 今回のタッチ位置を保持
-            oldrawx = x
-            oldrawy = y
-
-            super.onTouchEvent(event)
-            return true
         }
-        return false
+    }
+
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+        when (canvasType) {
+            PhotoEditCanvasType.FIXED, PhotoEditCanvasType.EDIT -> {
+                super.onTouchEvent(event)
+                return true
+            }
+            PhotoEditCanvasType.MOVE -> {
+                val x = event.rawX.toInt()
+                val y = event.rawY.toInt()
+                when (event.action) {
+                    MotionEvent.ACTION_DOWN -> {
+                        editable()
+                        print("action down")
+                        EventBus.getDefault().post(RakugakiTapEvent(RakugakiTapEvent.RakugakiEvent.TEXTABLE, this))
+                    }
+                    MotionEvent.ACTION_MOVE -> {
+                        print("action move")
+                        movable()
+
+                        // 今回イベントでのView移動先の位置
+                        var left = this.left
+                        var top = this.top
+                        left += (x - oldrawx)
+                        top += (y - oldrawy)
+
+                        // Viewを移動する
+                        this.layout(left, top, left + this.width, top + this.height)
+
+                        moved = true
+                        EventBus.getDefault().post(RakugakiTapEvent(RakugakiTapEvent.RakugakiEvent.DRAGGING, this))
+                    }
+                    MotionEvent.ACTION_UP -> {
+                        if (!moved) {
+                            return true
+                        }
+
+                        this?.viewTreeObserver?.let { observer ->
+                            val listener = object : ViewTreeObserver.OnGlobalLayoutListener {
+                                override fun onGlobalLayout() {
+
+                                    val lp = FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT)
+                                    lp.setMargins(this@TextCanvasView.left, this@TextCanvasView.top, 0, 0)
+                                    lp.width = 3000
+                                    this@TextCanvasView.setLayoutParams(lp)
+
+                                    observer.removeOnGlobalLayoutListener(this)
+                                }
+                            }
+                            observer.addOnGlobalLayoutListener(listener)
+                        }
+
+                        if (moved) {
+                            moved = false
+                            EventBus.getDefault().post(RakugakiTapEvent(RakugakiTapEvent.RakugakiEvent.RELEASED, this))
+                        }
+                    }
+                }
+                // 今回のタッチ位置を保持
+                oldrawx = x
+                oldrawy = y
+
+                super.onTouchEvent(event)
+                return true
+            }
+            else -> {
+                return false
+            }
+        }
     }
 
     fun createNewMoveCanvas(frameLayout: FrameLayout): TextCanvasView? {
@@ -122,7 +192,7 @@ class TextCanvasView constructor(context: Context, var canvasType: PhotoEditCanv
         val lh = this.height
 
         // 新しいビュー(pcv)の作成と、そのビューへの上のビットマップの描画
-        val pcv = makeCanvas(context, PhotoEditCanvasType.MOVE, text.toString(), this.color)
+        val pcv = makeCanvas(context, PhotoEditCanvasType.MOVE, text.toString(), this.color,frameLayout.width)
         // 新しい描画viewの位置を指定
         var lp = FrameLayout.LayoutParams(lw, lh)
         lp.leftMargin = this.x.toInt()
@@ -134,8 +204,9 @@ class TextCanvasView constructor(context: Context, var canvasType: PhotoEditCanv
     }
 
     companion object {
-        fun makeCanvas(context: Context, type: PhotoEditCanvasType, text: String?, color: Int): TextCanvasView {
-            return TextCanvasView(context, type, text, color)
+        fun makeCanvas(context: Context, type: PhotoEditCanvasType, text: String?, color: Int, parentWidth: Int): TextCanvasView {
+            return TextCanvasView(context, type, text, color, parentWidth)
         }
     }
+
 }

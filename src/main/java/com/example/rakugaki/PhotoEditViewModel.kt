@@ -1,8 +1,10 @@
 package com.example.rakugaki
 
+import android.content.Context
 import android.databinding.BaseObservable
 import android.databinding.Bindable
 import android.graphics.Bitmap
+import android.support.v4.content.ContextCompat
 import android.view.View
 
 /**
@@ -96,8 +98,44 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
         imageUrl = photo?.imageUrl
     }
 
+    fun setColor(color: Int, context: Context){
+
+        when(color){
+            ContextCompat.getColor(context, R.color.red) ->{
+                redPentable = true
+                bluePentable = false
+                whitePentable = false
+                blackPentable = false
+                rakugaki?.setRedColor()
+            }
+            ContextCompat.getColor(context, R.color.blue) ->{
+                redPentable = false
+                bluePentable = true
+                whitePentable = false
+                blackPentable = false
+                rakugaki?.setBlueColor()
+            }
+            ContextCompat.getColor(context, R.color.black) ->{
+                redPentable = false
+                bluePentable = false
+                whitePentable = false
+                blackPentable = true
+                rakugaki?.setBlackColor()
+            }
+            ContextCompat.getColor(context, R.color.white) ->{
+                redPentable = false
+                bluePentable = false
+                whitePentable = true
+                blackPentable = false
+                rakugaki?.setWhiteColor()
+            }
+        }
+
+    }
+
     fun onClickPentable(view: View) {
         val rakugaki = rakugaki ?: return
+        if(!rakugaki.isEnabled ) return
 
         pentable = !pentable
         if (pentable || charactable) {
@@ -131,6 +169,7 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
 
     fun onClickRedPentable(view: View) {
         val rakugaki = rakugaki ?: return
+        if(!rakugaki.isEnabled ) return
 
         redPentable = true
         bluePentable = false
@@ -158,6 +197,7 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
 
     fun onClickBluePentable(view: View) {
         val rakugaki = rakugaki ?: return
+        if(!rakugaki.isEnabled ) return
 
         bluePentable = true
         redPentable = false
@@ -185,6 +225,7 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
 
     fun onClickBlackPentable(view: View) {
         val rakugaki = rakugaki ?: return
+        if(!rakugaki.isEnabled ) return
 
         blackPentable = true
         bluePentable = false
@@ -212,6 +253,7 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
 
     fun onClickWhitePentable(view: View) {
         val rakugaki = rakugaki ?: return
+        if(!rakugaki.isEnabled ) return
 
         whitePentable = true
         bluePentable = false
@@ -237,8 +279,11 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
         }
     }
 
-    fun onClickCharactable(view: View) {
-        charactable = !charactable
+    fun setCharactable(){
+        val rakugaki = rakugaki ?: return
+        if(!rakugaki.isEnabled ) return
+
+        charactable = true
         if (pentable || charactable) {
             menuVisibility = View.GONE
             callback?.enableCancel()
@@ -250,6 +295,14 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
         bluePentable = false
         whitePentable = false
         blackPentable = false
+    }
+
+    fun onClickCharactable(view: View) {
+        val rakugaki = rakugaki ?: return
+        if(!rakugaki.isEnabled ) return
+
+        setCharactable()
+        rakugaki?.fixed()
         rakugaki?.freetextStart()
     }
 
@@ -311,12 +364,5 @@ class PhotoEditViewModel(var photo: Photo?, var rakugaki: RakugakiCore? = null) 
     }
 
     companion object {
-        fun getViewBitmap(view: View): Bitmap? {
-            view.isDrawingCacheEnabled = true
-            val cache = view.drawingCache ?: return null
-            val bitmap = Bitmap.createBitmap(cache)
-            view.isDrawingCacheEnabled = false
-            return bitmap
-        }
     }
 }

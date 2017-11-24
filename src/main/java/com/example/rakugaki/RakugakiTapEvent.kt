@@ -8,7 +8,7 @@ import android.view.View
 class RakugakiTapEvent constructor(val event: RakugakiEvent, val view: View){
 
     enum class RakugakiEvent{
-        DRAGGING,RELEASED
+        TEXTABLE,DRAGGING,RELEASED
     }
 
 }

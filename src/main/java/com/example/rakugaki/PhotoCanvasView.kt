@@ -79,13 +79,16 @@ class PhotoCanvasView constructor(context: Context, var canvasType: PhotoEditCan
 
     override fun onDraw(canvas: Canvas?) {
         when (canvasType) {
-            PhotoEditCanvasType.MOVE -> super.onDraw(canvas)
+            PhotoEditCanvasType.MOVE, PhotoEditCanvasType.FIXED -> super.onDraw(canvas)
             PhotoEditCanvasType.EDIT -> canvas?.drawPath(path, paint)
         }
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
-
+        if(canvasType == PhotoEditCanvasType.FIXED){
+            super.onTouchEvent(event)
+            return true
+        }
         val x = event.x
         val y = event.y
 
@@ -184,8 +187,8 @@ class PhotoCanvasView constructor(context: Context, var canvasType: PhotoEditCan
         println("pcv width:" + pcv.width.toString())
         println("pcv height:" + pcv.height.toString())
 
-        println("captured width:" + captured.width.toString())
-        println("captured height:" + captured.height.toString())
+        println("captured width:" + captured?.width.toString())
+        println("captured height:" + captured?.height.toString())
 
         frameLayout.removeView(this)
         frameLayout.addView(pcv)
